@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:adjustViewBounds="true"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/catalog_room"/>
+
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_gravity="center"
+        android:rating="2.5"
+        app:mrb_progressTint="@color/red"
+        app:mrb_secondaryProgressTint="@color/colorPrimary"
+        android:stepSize="0.01"
+        android:minHeight="12dp"
+        android:maxHeight="12dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

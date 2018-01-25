@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+      >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+         <ImageView
+             android:id="@+id/icon_on_view"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/ic_user"
+             android:tint="@color/red"
+             android:padding="5dp"/>
+
+
+            <TextView
+                android:id="@+id/header_title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/large_text"
+                android:text="USERS"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <ImageView
+                android:id="@+id/img_close_drawer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="center"
+                android:tint="@color/red"
+                android:layout_marginRight="5dp"
+                android:padding="5dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/buttons_layout"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:elevation="5dp"
+                android:textSize="@dimen/large_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/btn_new_user"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:elevation="5dp"
+                android:textSize="@dimen/large_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/btn_guest_user"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_height="wrap_content"
+                android:text="Guest"
+                android:elevation="5dp"
+                android:textSize="@dimen/large_text"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/login_layout"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_signup_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/new_user_layout"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sales_user_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+           <include layout="@layout/sales_user_options"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/purple_store_logo"/>
+
+
+
+
+
+
+
+</FrameLayout>

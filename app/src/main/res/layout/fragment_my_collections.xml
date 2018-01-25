@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nubella.purplecommerce.com.showroomcatalogue.Fragments.MyCollectionsFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/collections_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/all_collections_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:visibility="visible"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_download1"
+            android:layout_width="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:elevation="3dp"
+            android:textSize="@dimen/medium_text"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
